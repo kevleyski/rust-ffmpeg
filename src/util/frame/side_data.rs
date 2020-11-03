@@ -76,6 +76,9 @@ impl From<AVFrameSideDataType> for Type {
             AV_FRAME_DATA_CONTENT_LIGHT_LEVEL => Type::ContentLightLevel,
             AV_FRAME_DATA_ICC_PROFILE => Type::IccProfile,
 
+            // KJSL: TODO
+            AV_FRAME_DATA_SEI_UNREGISTERED => Type::IccProfile,
+
             #[cfg(feature = "ffmpeg_4_0")]
             AV_FRAME_DATA_QP_TABLE_PROPERTIES => Type::QPTableProperties,
             #[cfg(feature = "ffmpeg_4_0")]

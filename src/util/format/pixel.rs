@@ -643,6 +643,10 @@ impl From<AVPixelFormat> for Pixel {
             AV_PIX_FMT_GBRAPF32LE => Pixel::GBRAPF32LE,
             AV_PIX_FMT_DRM_PRIME => Pixel::DRM_PRIME,
 
+            // KJSL: TODO
+            AV_PIX_FMT_X2RGB10LE => Pixel::DRM_PRIME,
+            AV_PIX_FMT_X2RGB10BE => Pixel::DRM_PRIME,
+
             #[cfg(feature = "ffmpeg_4_0")]
             AV_PIX_FMT_OPENCL => Pixel::OPENCL,
 

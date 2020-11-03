@@ -1056,6 +1056,17 @@ impl From<AVCodecID> for Id {
             AV_CODEC_ID_GREMLIN_DPCM => Id::GREMLIN_DPCM,
             AV_CODEC_ID_DOLBY_E => Id::DOLBY_E,
 
+            // KJSL: TODO
+            AV_CODEC_ID_PGX => Id::DOLBY_E,
+            AV_CODEC_ID_AVS3 => Id::DOLBY_E,
+            AV_CODEC_ID_MOBICLIP => Id::DOLBY_E,
+            AV_CODEC_ID_PHOTOCD => Id::DOLBY_E,
+            AV_CODEC_ID_IPU => Id::DOLBY_E,
+            AV_CODEC_ID_ARGO => Id::DOLBY_E,
+            AV_CODEC_ID_CRI => Id::DOLBY_E,
+            AV_CODEC_ID_ADPCM_IMA_MOFLEX => Id::DOLBY_E,
+            AV_CODEC_ID_FASTAUDIO => Id::DOLBY_E,
+
             #[cfg(feature = "ffmpeg_4_0")]
             AV_CODEC_ID_APTX => Id::APTX,
             #[cfg(feature = "ffmpeg_4_0")]
